@@ -1,0 +1,1 @@
+- [python读写文件的例子 write_file.py](https://github.com/abelweiwencai/python-example/blob/master/write_file.py)
