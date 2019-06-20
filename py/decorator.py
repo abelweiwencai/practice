@@ -150,7 +150,7 @@ class ClassAddTag(object):
 
 # 带有参数的类装饰器
 class ClassAddTagParam(object):
-    def __init__(self, level='[class<a>]'):
+    def __init__(self, level='[class<a>----]'):
         self.level = level
 
     def __call__(self, func):
@@ -180,7 +180,7 @@ def add_tag3(tag='<button>'):
     return 'ok3'
 
 
-@ClassAddTagParam(level='[<a>]')
+@ClassAddTagParam()
 def add_tag4(tag='<button>'):
     print(tag)
     return 'ok4'
