@@ -80,6 +80,7 @@ if __name__ == '__main__':
     insert into test_user(`id`, `username`) values (47, 'name2');
     insert into test_user(`id`, `username`) values (48, 'name2');
     """
+    sql = 'alter table test_user add test_column number;'  
 
 #     sql = '''
 #     CREATE TABLE `ops_test_user4` (
