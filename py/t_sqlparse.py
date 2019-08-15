@@ -150,7 +150,7 @@ def test_parse_alter_for_gh_ost():
 def test_alter(sql=None):
     if not sql:
         sql = '      /* alter    table `table_name` drop column c   ;*/alter    table table_name drop column c   ;  '
-        # sql = 'create index idex_name on table_name(cname)'
+        # sql = "insert into bbb valuses ('/*sdfsfa*/' , '-- asdfasdf', '# asdfasdf')"
     stmt = sqlparse.parse(sql)[0]
     stmt_type = stmt.get_type()
     if stmt_type != 'ALTER':
@@ -164,8 +164,8 @@ def test_alter(sql=None):
         else:
             value_list.append(value)
     print(value_list)
-    print(' '.join(value_list))
-    print('table name:', value_list[2])
+    print('             sql:', ' '.join(value_list))
+    print('      table name:', value_list[2])
     print('gh-ost condition:', ' '.join(value_list[3:]))
 
 
