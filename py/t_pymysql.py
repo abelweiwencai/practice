@@ -14,6 +14,7 @@ def execute_select():
             port=3306
         )
     sql = 'select * from test_user , test_user t1, test_user t2, test_user t3, test_user t4  where t1.id=1 and  t2.id=3 and t3.id=3 and t4.id=4 limit 1'
+    # self.db.cursor(pymysql.cursors.DictCursor);
     with conn.cursor() as cursor:
         cursor.execute(sql)
         field = cursor.description
