@@ -169,6 +169,14 @@ def test_alter(sql=None):
     print('gh-ost condition:', ' '.join(value_list[3:]))
 
 
+def test_get_table_name():
+    sql = "   update user_credit set apply_date = case credit_status when 490 then ext3 when 500 then credit_date else '0000-00-00 00:00:00' end where apply_date = '0000-00-00 00:00:00';"
+    # sql = "udpate table1 a, table2 b set .name=b.name where a.id=b.id"
+    stmt = sqlparse.parse(sql)[0]
+    print(stmt.get_name(), stmt._get_first_name())
+
+
 if __name__ == '__main__':
     # test_parse_alter_for_gh_ost()
-    test_alter()
+    # test_alter()
+    test_get_table_name()
