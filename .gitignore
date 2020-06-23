@@ -106,4 +106,4 @@ venv.bak/
 **/config.py
 
 # js
-# js/t_wbpack/node_modules
+js/t_wbpack/node_modules
