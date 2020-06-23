@@ -104,3 +104,6 @@ venv.bak/
 .mypy_cache/
 **/.DS_Store
 **/config.py
+
+# js
+js/t_wbpack/node_modules
