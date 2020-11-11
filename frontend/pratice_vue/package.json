@@ -1,0 +1,15 @@
+{
+  "name": "pratice_vue",
+  "version": "1.0.0",
+  "description": "测试学习",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
