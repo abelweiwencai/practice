@@ -8,3 +8,11 @@ while True:
     if not p_l:
         break
     idx += c
+
+
+def a(a, b):
+    def func_b(x):
+        print(a, b, x)
+    func_b('x')
+
+a('a', 'b')
